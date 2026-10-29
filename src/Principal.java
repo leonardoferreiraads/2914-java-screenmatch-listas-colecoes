@@ -4,6 +4,8 @@ import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
@@ -40,6 +42,14 @@ public class Principal {
         filmeDoLeo.setNome("Transformers 1");
         filmeDoLeo.setDuracaoEmMinutos(300);
         filmeDoLeo.setAnoDeLancamento(2009);
+        filmeDoLeo.avalia(10);
+
+        ArrayList <Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filmeDoLeo);
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(outroFilme);
+        System.out.println("Tamanho da lista: " + listaDeFilmes.size());
+        System.out.println("Primeiro filme: " + listaDeFilmes.get(0).getNome());
 
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
         calculadora.inclui(meuFilme);
