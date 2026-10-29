@@ -36,6 +36,11 @@ public class Principal {
         outroFilme.setAnoDeLancamento(2023);
         outroFilme.setDuracaoEmMinutos(200);
 
+        var filmeDoLeo = new Filme();
+        filmeDoLeo.setNome("Transformers 1");
+        filmeDoLeo.setDuracaoEmMinutos(300);
+        filmeDoLeo.setAnoDeLancamento(2009);
+
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
         calculadora.inclui(meuFilme);
         calculadora.inclui(outroFilme);
