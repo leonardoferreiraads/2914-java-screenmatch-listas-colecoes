@@ -39,7 +39,6 @@ public class Principal {
         outroFilme.setDuracaoEmMinutos(200);
 
         var filmeDoLeo = new Filme("Transformers");
-        filmeDoLeo.setNome("Transformers 1");
         filmeDoLeo.setDuracaoEmMinutos(300);
         filmeDoLeo.setAnoDeLancamento(2009);
         filmeDoLeo.avalia(10);
