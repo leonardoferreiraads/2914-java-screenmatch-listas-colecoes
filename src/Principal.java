@@ -34,7 +34,6 @@ public class Principal {
         System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos());
 
         Filme outroFilme = new Filme("Avatar");
-        outroFilme.setNome("Avatar");
         outroFilme.setAnoDeLancamento(2023);
         outroFilme.setDuracaoEmMinutos(200);
 
